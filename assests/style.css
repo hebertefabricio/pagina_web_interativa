@@ -12,7 +12,7 @@ body {
 #conteiner{
    display: flex;
    flex-wrap: wrap;
-   justifly-content: space-between;
+   justify-content: space-between;
    padding: 4rem;
    gap: 3rem;
 }

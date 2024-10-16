@@ -16,3 +16,8 @@ criaCartao(
     'Uma função e um bloco de código que executa algua tarefa'
 )
 
+criaCartao(
+    `Lingua inglesa`,
+    `Como se diz oi em Inglês`,
+    `Oi em ingles é Hi (RAI)`,
+)

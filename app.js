@@ -7,13 +7,23 @@ cartao.innerHTML = `
     <div class="cartao__conteudo">
     <h3>${categoria}</h3> 
     <div class="cartao__conteudo__pergunta">
-        <p>O que é JavaScript?</p>
+        <p>${pergunta}</p>
     </div>
     <div class="cartao__conteudo__resposta">
-        <p>O JavaScript é uma linguagem de progamação</p>
+        <p>${resposta}</p>
     </div>
     </div>
     `
+    let respostaEstaVisivel = false
+
+
+    function ViraCartao() {
+        respostaEstaVisivel = !respostaEstaVisivel
+        cartao.classList.toggle('active',respostaEstaVisivel)
+    }
+    cartao.addEventListener('click',viraCartao)
+
+
     container.appendChild(cartao)
 
 }
